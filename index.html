@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Regular expression</title>
+</head>
+<body>
+<script>
+    function isFristLetterUpperCase(str) {
+        regexp = /^[A-Z]/;
+        if(regexp.test(str)){
+            document.write("String's first character is uppercase"+"<br>");
+        }else{
+            document.write("String's first character is not  uppercase"+"<br>");
+        }
+
+    }
+    // isFristLetterUpperCase("Abcd");
+    // isFristLetterUpperCase("abcd");
+    let string1= "Nguyen van Nam";
+    isFristLetterUpperCase(string1);
+    let string2= "NGUYEN VAN NAM";
+    isFristLetterUpperCase(string2);
+    let string3= "nguyen van Nam";
+    isFristLetterUpperCase(string3);
+</script>
+</body>
+</html>
